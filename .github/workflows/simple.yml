@@ -1,0 +1,16 @@
+name: Shell Scripting
+
+on: [push]
+
+jobs:
+  run-bash-command: #Name of Job
+    runs-on: ubuntu-latest # OS on which this particular job will run
+    steps:
+      - name: echo Scripting
+        run: echo "Hello World"
+      - name: Multiple line Scripting
+        run: |
+          node -v
+          npm -v
+
+
